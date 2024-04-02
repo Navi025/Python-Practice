@@ -71,15 +71,16 @@ def tie():
     print(f"Total tie matches: {t}")
 
 
-def Tscore():
+def Tscore(t):
     ts=w*4+t*2
     print(f"Total score is {ts}")
+    return ts
 
 p=int(input("Enter no of total games played: "))
 w=int(input("Enter total no matches won: "))
 l=int(input("Enter total no of matches loseL: "))
 tie()
-Tscore()
+Tscore(t=p-(l+w))
        
 """
 Q7. Check if the number entered by User is divisible by 3 or not
