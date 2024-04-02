@@ -66,20 +66,20 @@ Q6. Ask number of games played in a tournament. Ask the user number of
 games won and number of games loss. Calculate number of tie and total
 Points. (1 win= 4 points, 1 tie =2 points)
 """
-# def tie():
-#     t=p-(l+w)
-#     print(f"Total tie matches: {t}")
+def tie():
+    t=p-(l+w)
+    print(f"Total tie matches: {t}")
 
 
-# def Tscore(t):
-#     ts=w*4+t*2
-#     print(f"Total score is {ts}")
+def Tscore():
+    ts=w*4+t*2
+    print(f"Total score is {ts}")
 
-# p=int(input("Enter no of total games played: "))
-# w=int(input("Enter total no matches won: "))
-# l=int(input("Enter total no of matches loseL: "))
-# tie()
-# Tscore(p-(l+w))
+p=int(input("Enter no of total games played: "))
+w=int(input("Enter total no matches won: "))
+l=int(input("Enter total no of matches loseL: "))
+tie()
+Tscore()
        
 """
 Q7. Check if the number entered by User is divisible by 3 or not
@@ -108,11 +108,11 @@ Q8. Ask a number from user. Print if the number is ODD or EVEN.
 Q9. Take values of length and breadth of a rectangle from user and check if
 it is square or not.
 """
-def ck_sq(l,b):
-    if l==b:
-        print("It is a SQUARE")
-    else:
-        print("It is a RECTANGEL")
-l=float(input("Enter length: "))
-b=float(input("Enter breadth: "))
-ck_sq(l,b)
+# def ck_sq(l,b):
+#     if l==b:
+#         print("It is a SQUARE")
+#     else:
+#         print("It is a RECTANGEL")
+# l=float(input("Enter length: "))
+# b=float(input("Enter breadth: "))
+# ck_sq(l,b)
