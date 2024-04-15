@@ -9,7 +9,8 @@ What will be the output of following:
  - not ( a < 10 or not b < 10)
  - not ( not a <= 5 or not b >= 10)
 """
-# def new_func():
+# def new_func():what
+
 #     a = 5
 #     b = 10
 #     print(a>5)
@@ -65,22 +66,22 @@ Q5. Calculate Area of Square by taking side from User
 Q6. Ask number of games played in a tournament. Ask the user number of
 games won and number of games loss. Calculate number of tie and total
 Points. (1 win= 4 points, 1 tie =2 points)
-"""
-def tie():
-    t=p-(l+w)
-    print(f"Total tie matches: {t}")
+# """
+# def tie():
+#     t=p-(l+w)
+#     print(f"Total tie matches: {t}")
 
 
-def Tscore(t):
-    ts=w*4+t*2
-    print(f"Total score is {ts}")
-    return ts
+# def Tscore(t):
+#     ts=w*4+t*2
+#     print(f"Total score is {ts}")
+#     return ts
 
-p=int(input("Enter no of total games played: "))
-w=int(input("Enter total no matches won: "))
-l=int(input("Enter total no of matches loseL: "))
-tie()
-Tscore(t=p-(l+w))
+# p=int(input("Enter no of total games played: "))
+# w=int(input("Enter total no matches won: "))
+# l=int(input("Enter total no of matches loseL: "))
+# tie()
+# Tscore(t=p-(l+w))
        
 """
 Q7. Check if the number entered by User is divisible by 3 or not
