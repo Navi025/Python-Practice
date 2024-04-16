@@ -66,32 +66,58 @@ Constrains
 -2**31 < x > 2**31-1
 """
 
-def RV(num)->int:
-    if num<-2**31 and num>2**31-1:
-        return 0
-    negative=False
-    n=num
-    if n<0:
-        negative=True
-        n=abs(n)
+# def RV(num)->int:
+#     if num<-2**31 and num>2**31-1:
+#         return 0
+#     negative=False
+#     n=num
+#     if n<0:
+#         negative=True
+#         n=abs(n)
     
 
-    result=0
+#     result=0
 
-    while n>0:
-        id=n%10
-        result=result*10+id
-        n=n//10
-    if negative==False:
-        if result>2**31-1:
-            return 0
-        return result
-    else:
-        result=result*-1
-        if result<-2**31:
-            return 0
-        return result
+#     while n>0:
+#         id=n%10
+#         result=result*10+id
+#         n=n//10
+#     if negative==False:
+#         if result>2**31-1:
+#             return 0
+#         return result
+#     else:
+#         result=result*-1
+#         if result<-2**31:
+#             return 0
+#         return result
 
-print(RV(-121))
-print(RV(1243))  
-print(RV(124345698545465465464664745768))    
+# print(RV(-121))
+# print(RV(1243))  
+# print(RV(124345698545465465464664745768))    
+
+"""
+Print Devisors
+Brute Force
+"""
+def p_divisor(num):
+
+    result=[]
+    for i in range(1,num+1):
+        if num%i==0:
+            result.append(i)
+    return result
+print(p_divisor(78))
+
+"""OPTIMAL"""
+import math
+def p_div_opt(num):
+    result=[]
+    n=num
+    for i in range(1,int(math.sqrt(n))+1):
+        if n%i==0:
+           result.append(i)
+           if n//i!=i:
+               result.append(n//i)
+    return result           
+print(p_div_opt(36))               
